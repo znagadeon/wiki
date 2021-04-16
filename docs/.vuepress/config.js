@@ -1,3 +1,5 @@
+const getAllPages = require('../../utils/get-all-pages');
+
 module.exports = {
 	port: 1337,
 	title: '지나가던 개발자',
@@ -7,6 +9,6 @@ module.exports = {
 			{ text: 'Blog', link: 'https://znagadeon.dev' },
 		],
 
-		sidebar: 'auto',
+		sidebar: getAllPages('./docs', ['.vuepress']),
 	},
 }
