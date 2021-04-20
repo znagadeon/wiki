@@ -1,3 +1,8 @@
+---
+prev: false
+next: false
+---
+
 # Main Page
 
 ## znagadeon
