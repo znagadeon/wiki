@@ -53,3 +53,12 @@ Object.freeze(parent);
 parent.test = 1; // error
 parent.child.test = 1; // It works!
 ```
+
+## `marked`의 점 파싱 이슈
+
+숫자 앞에 점을 찍으면 무조건 ordered list로 인식하는 버그가 있다.
+
+```
+2020. 05. 23. (x)
+2020\. 05\. 23\. (o)
+```

@@ -36,3 +36,5 @@ export default {
 ```html
 <div v-if="$slots.default"></div>
 ```
+
+## vuex에서 `dispatch`를 콜하면 무조건 `Promise`를 반환한다
