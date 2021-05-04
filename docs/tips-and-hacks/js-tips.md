@@ -62,3 +62,19 @@ parent.child.test = 1; // It works!
 2020. 05. 23. (x)
 2020\. 05\. 23\. (o)
 ```
+
+## `switch`의 신박한 사용법
+
+이게 된다고?
+
+```js
+switch (true) {
+	case 1+1 === 2:
+		console.log('It works');
+		break;
+	default:
+		break;
+}
+```
+
+- [출처](https://seanbarry.dev/posts/switch-true-pattern)
