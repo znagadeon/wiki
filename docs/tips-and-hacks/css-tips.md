@@ -13,3 +13,14 @@ tags:
 
 - `ex`: 현재 폰트의 `x` 글자 높이값의 n배
 - `ch`: 모노스페이스 폰트 `N` 글자 너비값의 n배
+
+## `writing-mode`
+
+글이 쓰이는 방향을 정해줄 수 있다. 워드클라우드 만들 때 좋을 듯
+
+```css
+p {
+	writing-mode: vertical-lr; # 왼쪽에서 오른쪽으로
+	writing-mode: horizontal-tb; # 위에서 아래로
+}
+```
