@@ -78,3 +78,12 @@ switch (true) {
 ```
 
 - [출처](https://seanbarry.dev/posts/switch-true-pattern)
+
+## js `Array.sort`의 기본 정렬 함수
+
+```js
+[1, 10, 2].sort() // [1, 10, 2]
+[1, 10, 1].sort((a, b) => b-a) // [1, 2, 10]
+```
+
+정렬 시 `toString()`이 한 번 실행되는 것으로 보인다. 반드시 정렬 함수를 전달하도록 하자.
