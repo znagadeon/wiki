@@ -6,15 +6,24 @@ const getAllPages = (path, excludes, base = '') => {
 		return excludes.indexOf(dirent.name) === -1;
 	}).map(dirent => {
 		if (dirent.isFile()) {
+			if (base !== '' && dirent.name === 'README.md') {
+				return null;
+			}
 			return `${base}/${dirent.name.replace(/README\.md$/, '').replace(/\.md$/, '')}`;
 		} else {
+			const fullPath = `${path}/${dirent.name}`;
+			const basePath = `${base}/${dirent.name}`;
+
 			return {
 				title: dirent.name.toUpperCase().replace(/-/g, ' '),
 				collapsable: true,
-				children: getAllPages(`${path}/${dirent.name}`, excludes, `${base}/${dirent.name}`),
+				children: getAllPages(fullPath, excludes, basePath),
+				...(fs.readdirSync(fullPath).indexOf('README.md') > -1 ? {
+					path: `${basePath}/`,
+				} : {}),
 			};
 		}
-	});
+	}).filter(v => v);
 };
 
 module.exports = getAllPages;
