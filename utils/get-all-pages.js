@@ -6,6 +6,8 @@ const getAllPages = (path, excludes, base = '') => {
 		return excludes.indexOf(dirent.name) === -1;
 	}).map(dirent => {
 		if (dirent.isFile()) {
+			if (!/\.md$/.test(dirent.name)) return null;
+
 			if (base !== '' && dirent.name === 'README.md') {
 				return null;
 			}
