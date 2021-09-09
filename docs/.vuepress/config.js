@@ -9,6 +9,6 @@ module.exports = {
 			{ text: 'Blog', link: 'https://znagadeon.dev' },
 		],
 
-		sidebar: getAllPages('./docs', ['.vuepress']),
+		sidebar: getAllPages('./docs', ['.vuepress', 'tags.md']),
 	},
 }

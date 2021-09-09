@@ -12,8 +12,8 @@ next: false
 
 ### 관심있는 기술
 
-- javascript
-	- Vue
+<HomeTags />
+
 - 자동화
 - 문서화
 - 야크 털 깎기
