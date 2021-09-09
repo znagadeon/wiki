@@ -11,5 +11,3 @@ const rgb = {
 ```
 
 - [쉽게 계산할 수 있는 사이트](http://marcodiiga.github.io/rgba-to-rgb-conversion)
-
-<PageTags />
