@@ -24,3 +24,5 @@ p {
 	writing-mode: horizontal-tb; # 위에서 아래로
 }
 ```
+
+<PageTags />

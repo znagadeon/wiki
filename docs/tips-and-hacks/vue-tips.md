@@ -1,6 +1,7 @@
 ---
 tags:
   - vue
+  - js
 ---
 
 # Vue 미세 팁 모음
@@ -38,3 +39,5 @@ export default {
 ```
 
 ## vuex에서 `dispatch`를 콜하면 무조건 `Promise`를 반환한다
+
+<PageTags />

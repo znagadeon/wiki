@@ -32,3 +32,5 @@ git blame -L 1,10 filename
 ```
 
 `filename`의 1번부터 10번까지의 blame 내역을 보여준다.
+
+<PageTags />
