@@ -149,6 +149,11 @@ const {
 ## Date 객체와 날짜
 
 - `Date` 객체에 음수값을 전달해서 1970년 이전 날짜를 표현할 수 있다.
+	```js
+	const date1 = new Date(1800, 0, 1); // 1800년 1월 1일
+	console.log(date.getTime()); // -5364692872000
+	const date2 = new Date(-1000); // 1979년 12월 31일 23:59:59
+	```
 - [벤치마크 테스트](https://ko.javascript.info/date#ref-1174)
 
 ## JSON과 메서드
