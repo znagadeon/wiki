@@ -25,4 +25,15 @@ p {
 }
 ```
 
+## `currentColor`
+
+상속받은 색상을 사용한다. 단색 컴포넌트라면 css variable의 도움 없이 컴포넌트의 색상을 통일할 수 있다.
+
+```css
+h1 {
+	color: red;
+	border: 1px solid currentColor; /* red */
+}
+```
+
 <PageTags />
